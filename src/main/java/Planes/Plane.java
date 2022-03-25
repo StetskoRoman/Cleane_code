@@ -19,11 +19,15 @@ abstract public class Plane {
         return model;
     }
 
-    public int getMS() {
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getMaxSpeed() {
         return maxSpeed;
     }
 
-    public int Get_Max_Flight_Distance() {
+    public int getMaxFlightDistance() {
         return maxFlightDistance;
     }
 
@@ -34,7 +38,7 @@ abstract public class Plane {
 
     @Override
     public String toString() {
-        return "Plane{" +
+        return "\nPlane{" +
                 "model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", maxFlightDistance=" + maxFlightDistance +
